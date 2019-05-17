@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Among the commands that I ran:
 
-Things you may want to cover:
+rake db:create
 
-* Ruby version
+rails s
 
-* System dependencies
+rails g controller Topics    
 
-* Configuration
+- Don has a lecture on how template vars are passed... I will send it to you in the actual notes
 
-* Database creation
+rake g model Topic
 
-* Database initialization
+rake db:migrate
 
-* How to run the test suite
+## TO RUN THIS PROJECT
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+bundle
+rake db:setup
+rails s
 
-* Deployment instructions
+Then just go to localhost:3000
+```
 
-* ...
+`rails c` is so you can run arbitrary ruby commands (Active record stuff, etcru...)
