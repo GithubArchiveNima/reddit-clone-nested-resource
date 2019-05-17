@@ -7,7 +7,13 @@
   <title>Document</title>
 </head>
 <body>
-  <h1><%= @message %></h1>
+  <h1>Topics</h1>
+
+  <% @topics.each do |topic| %>
+    <div>
+      <%= topic %>
+    </div>
+  <% end %>
   
 </body>
 </html>

@@ -1,7 +1,7 @@
 class TopicsController < ApplicationController
 
   def index
-    @message = 'Hello!'
+    @topics = Topic.all
     # implied that we call render on index, with some vars
   end
 
