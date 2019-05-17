@@ -11,7 +11,8 @@
 
   <% @topics.each do |topic| %>
     <div>
-      <%= topic %>
+      <h2><%= topic.name %></h2>
+      <img style="height: 150px;" src="<%= topic.image %>" />      
     </div>
   <% end %>
   
