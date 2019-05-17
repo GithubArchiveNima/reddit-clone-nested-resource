@@ -5,4 +5,5 @@ class ConversationsController < ApplicationController
     @topic = Topic.find(params[:topic_id]) # dynamic to the URL
     @conversations = @topic.conversations
   end
+
 end

@@ -9,4 +9,7 @@ class TopicsController < ApplicationController
   #   res.render('index', {})
   # })
 
+  def show
+    @topic = Topic.find(params[:id])
+  end
 end

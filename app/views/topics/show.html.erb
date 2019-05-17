@@ -7,14 +7,8 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Topics</h1>
-
-  <% @topics.each do |topic| %>
-    <div>
-      <h2><%= link_to topic.name, topic_url(topic) %></h2>
-      <img style="height: 150px;" src="<%= topic.image %>" />      
-    </div>
-  <% end %>
-  
+  <h1><%= @topic.name %></h1>
+  <p><%= @topic.description %></p>
+  <h2><%= link_to "See conversations", topic_conversations_path(@topic) %></h2>
 </body>
 </html>
