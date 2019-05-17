@@ -7,4 +7,8 @@ Rails.application.routes.draw do
     resources :conversations
   end
 
+  namespace 'admin' do
+    resources :topics
+  end
+
 end
